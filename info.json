@@ -1,0 +1,47 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "get_current_time",
+      "description": "当你想知道现在的时间时非常有用。"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_current_weather",
+      "description": "当你想查询指定城市的天气时非常有用。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "location": {
+            "type": "string",
+            "description": "城市或县区，比如北京市、杭州市、余杭区等。"
+          }
+        },
+        "required": [
+          "location"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "set_speaker_control",
+      "description": "设置机器人的扬声器音量",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "volume": {
+            "type": "number",
+            "description": "0到100之间的整数"
+          }
+        },
+        "required": [
+          "volume"
+        ]
+      }
+    }
+  }
+]
